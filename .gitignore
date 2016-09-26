@@ -1,0 +1,5 @@
+.DS_Store
+desktop.ini
+src/.sass-cache/*
+src/node_modules/*
+01-ORIGINAIS/ORIGINAIS

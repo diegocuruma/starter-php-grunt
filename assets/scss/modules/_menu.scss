@@ -1,0 +1,77 @@
+/*
+|----------------------------------------------
+| Menu
+|----------------------------------------------
+*/
+
+//mark menu
+    /*.home .menu-link[title*="Home"],
+    .page-produtos .menu-link[title*="Produtos"],
+    .page-contato .menu-link[title*="Contato"]{color:$cl1!important;}*/
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+}
+
+.navbar-toggle.collapsed {
+  .top-bar {
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+  .bottom-bar {
+    transform: rotate(0);
+  }
+}
+
+.navbar{
+      margin-bottom: inherit;
+      border:none;
+      border-radius:0px;
+      padding: 15px 0;
+        li{
+            margin: 0 15px;
+        }
+        a.menu-link {
+          padding: 18px 10px;
+          display: block;
+          font:ft-convert(22) $ft1;
+          color:$cl1 $imp;
+            &:hover{
+            color:$cl2  $imp;
+            }
+        }
+        &-nav{
+          margin-top:0;
+        }
+    }
+
+    .navbar li.active > a{
+      background-color:transparent$imp;
+      //@include back($cl1 $imp, $cl2 $imp);
+      // &:hover{
+      //   background-color: black;
+      // }
+    }

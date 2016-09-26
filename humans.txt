@@ -1,0 +1,22 @@
+/* TEAM */
+
+Ag: 
+Diretor: 
+http://.com.br/
+
+
+Site:
+
+Front-ender: diego curumim
+E-mail: diegocuruma@gmail.com
+
+Back-ender:
+E-mail: 
+
+/* SITE */
+
+Last update: 22/08/2016
+Standards: HTML5, CSS3
+Components: GruntJS, jQuery, SASS/Compass
+Software: Atom, Brackets, Photoshop, PhpStorm
+

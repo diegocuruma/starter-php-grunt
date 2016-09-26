@@ -1,0 +1,39 @@
+/*
+|----------------------------------------------
+| Form
+|----------------------------------------------
+*/
+
+
+.form{
+    width: 100%;
+    position: relative;
+}
+
+.legend{
+    font:$t-m $ft2;
+    
+}
+.label{
+    margin-bottom:10px;
+    width: 100%;
+    float: left;
+}
+.input, .textarea {
+    width:100%;
+    height:48px;
+    margin-bottom: 7px;
+    float:left;
+    text-indent: 15px;
+    border:1px solid $cl1;
+    color:$cl3;
+    font-family: $ft1;
+    }	
+        .input:focus, .textarea:focus{
+            border-color:$cl1;
+            color:$cl1
+        }
+    .textarea{
+        height:100px;
+    }
+

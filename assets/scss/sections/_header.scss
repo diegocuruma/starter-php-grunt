@@ -1,0 +1,26 @@
+/*
+|----------------------------------------------
+| Header
+|----------------------------------------------
+*/
+
+.header{
+
+}
+
+.navbar-default{
+  
+}
+
+
+$lgHei : 45px;
+.navbar-brand{
+    height:$lgHei;
+    padding: 0;
+    //margin-top: 15px;
+    margin-left:15px$imp;
+    img{
+    //margin:15px;
+    height:$lgHei;
+    }
+}

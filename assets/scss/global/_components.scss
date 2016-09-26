@@ -1,0 +1,24 @@
+/*
+|----------------------------------------------
+| Components
+|----------------------------------------------
+*/
+
+
+//**
+// lista
+//**
+.lista{
+  //padding: 50px;
+	&__item{
+	font-size:$t-m;
+	font-family:$ft1;
+    margin-top:20px;
+
+	}
+	&__desc{
+		font-size:$t-m;
+		font-family:$ft1;
+		margin-bottom:15px;
+	}
+}

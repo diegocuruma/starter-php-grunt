@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/*
+****
+****
+
+Date: DD/MM/AAAA
+Organization of the Styles Sheets
+
+** FRAMEWORK'S CSS
+    -- compass
+
+
+** GLOBAL
+    -- variables
+    -- placeholder
+    -- mixins
+    -- normalize
+    -- reset
+    -- fonts
+    -- animations
+
+** MODULES
+    -- helpers
+    -- grid
+    -- menu
+    -- form
+    -- tabelas
+    -- listas
+    -- tabs
+    -- tooltip
+    -- modal
+    -- box
+    -- galerias
+
+** SECTIONS
+	-- header
+	-- footer
+	-- inner content
+
+** CUSTOM SECTIONS
+    --
+
+****
+****
+
+*/
+
+
+// **
+// FRAMEWORK'S CSS
+// **
+@import "compass";
+
+
+// **
+// GLOBAL
+// **
+@import "global/animate";
+@import "global/variables";
+@import "global/placeholder";
+@import "global/mixins";
+@import "global/normalize";
+@import "global/reset";
+@import "global/fonts";
+@import "global/components";
+//@import "global/animations";
+
+// **
+// MODULES
+// **
+@import "modules/helpers";
+@import "modules/bootstrap";
+@import "modules/menu";
+@import "modules/form";
+@import "modules/tabelas";
+@import "modules/listas";
+@import "modules/tabs";
+@import "modules/tooltip";
+@import "modules/modal";
+@import "modules/box";
+@import "modules/galerias";
+@import "modules/buttons";
+@import "modules/fancybox";
+@import "modules/owl";
+@import "modules/swipe";
+
+
+// **
+// SECTIONS
+// **
+@import "sections/header";
+@import "modules/menu";
+@import "sections/footer";
+@import "sections/inner-content";
+@import "sections/query";
+
+
+// **
+// CUSTOM SECTIONS
+// **
+
+
+/*
+|----------------------------------------------
+| main custom
+|----------------------------------------------
+*/
+//for para cores e margin nos titulos
+
+ @for $i from 1 through 6 {
+   h#{$i} {
+      margin: 10px 0 0;
+      //font-family: $ft1;
+     }
+ }
+
+
+
+.sobre{
+	padding: 75px 0;
+}
+
+
+
+
+
+/* mudar selecao */
+::-moz-selection {color:#000; background:#d74a2c; text-shadow:none;}
+::selection {color:#000; background:#d74a2c; text-shadow:none;}
+
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+/* css micro clearfix */
+.cf{@extend %clearfix}
+

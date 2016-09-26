@@ -1,0 +1,25 @@
+{
+  "name": "starter-php",
+  "title": "Grunt Start",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "homepage": "www.sitedoprojeto.com",
+  "description": "Coloque a descrição do seu projeto aqui.",
+  "author": {
+    "name": "curumim",
+    "url": "http://www..com.br",
+    "email": "contato@.com.br"
+  },
+  "devDependencies": {
+    "grunt": ">=0.4.5",
+    "grunt-browser-sync": ">=2.2.0",
+    "grunt-contrib-clean": ">=0.7.0",
+    "grunt-contrib-compass": ">=1.0.4",
+    "grunt-contrib-copy": ">=0.8.2",
+    "grunt-contrib-uglify": ">=0.11.0",
+    "grunt-contrib-watch": ">=0.6.1",
+    "grunt-css": ">=0.5.4",
+    "grunt-img": ">=0.1.8",
+    "matchdep": ">=1.0.0"
+  }
+}

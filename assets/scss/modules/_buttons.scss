@@ -1,0 +1,100 @@
+/*
+|----------------------------------------------
+| Buttons
+|----------------------------------------------
+*/
+
+// bts
+.bts{
+  margin-top:15px;
+  display:table;
+  li{
+    float:left;
+    margin:0 7px;
+  }
+
+  &__bt{
+    display:inline-block;
+  *display:inline;
+	padding:10px 30px;
+	//margin-bottom:10px;
+	font:ft-convert(18) $ft1;
+	color:#fff;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+  //text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    border-radius:6px;
+    background: #8e8e8e;
+	border-bottom:2px solid #717171;
+    &:hover{
+        background: #a0a0a0;
+    }
+
+  //**
+  // buttons variantes
+  //**
+
+  //verde/green
+  &--green{
+    @include bg-bd($cl4, rgba($cl4, .2));
+    //padding:10px 8px;
+    &:hover, &:active{
+	    background:rgba($cl4, .4);
+      }
+    }
+
+   // blue
+    &--pink{
+      //padding:10px 8px;
+    @include bg-bd($cl2, rgba($cl2, .2));
+    &:hover, &:active{
+	    background:rgba($cl2, .3);
+      }
+    }
+
+
+    // table
+    &--table{
+      //@extend %center;
+      width: 100%;
+    }
+
+    &--form{
+    border:0$imp;
+    border-radius: 4px;
+      margin-top: 10px;
+    }
+
+
+
+    //**
+    // buttons variantes
+    //**
+    &--bordered-base{
+      border:1px solid $cl4;
+      background: initial;
+      @extend %center;
+
+    }
+
+
+    &--small{
+      	padding:7px;
+    }
+
+    &--large{
+      padding:15px;
+    }
+
+
+    &--center{
+      @extend %center;
+    }
+
+    &--right{
+      @extend .pull-right
+    }
+
+  }
+}
