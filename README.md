@@ -1,22 +1,20 @@
 # Starter php curumim
 
-## O projeto ""
+## Description ""
 
 O projeto ... | www
 
-## O que é o starter?
+## About us?
 
 É um starter php. É um conjunto de trabalho que utiliza para as tarefas do dia a dia o Bootstrap, SASS e Grunt.
 
 
-## Como usa?
+## Getting Started
 # Pré-requisitos: Você precisa ter instalado .
-
-SASS/Compass
-*http://rubyinstaller.org/
-*gem install sass
-*gem install compass
-
+- Install Node.js
+- Install Grunt by running `npm install -g grunt-cli`
+- Install sass
+- Install compass
 
 
 ## Directory Overview
@@ -26,6 +24,7 @@ ProjectRoot/
 ├── assets/
 │   ├── scss/
 │   │   └── global/
+|	│   │   └── _bootstrap.scss			
 |	│   │   └── _variables.scss			
 |	│   │   └── _components.scss			
 |	│   │   └── _mixins.scss			
@@ -66,6 +65,21 @@ ProjectRoot/
 ...
 
 
+### About Structure
+* Após rodar os comandos vai ser criada a pasta 'build/' com os arquivos da production, aí é só subir pro servidor.
+
+## Authors
+
+* Site:
+* E-mail: diegocuruma@gmail.com
+
+## Team
+
+* Layout:
+* Front:
+* Back:
+
+
 ## Node.js
 *https://nodejs.org/en/
 
@@ -75,19 +89,7 @@ ProjectRoot/
 * Versão 1 - Modo inicial, testes e aplicação estão começando com Bootstrap.
 
 
-## Autores
-
-* Site:
-* E-mail: diegocuruma@gmail.com
-
-## Equipe
-
-* Layout:
-* Front:
-* Back:
-
-
-## Referências
+## References
 
 * [Sass](http://sass-lang.com/)
 * [Compass](http://compass-style.org/)
