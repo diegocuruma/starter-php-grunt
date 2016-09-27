@@ -1,4 +1,4 @@
-# Starter php curumim
+# Starter grunt
 
 ## Description ""
 
@@ -6,7 +6,7 @@ O projeto ... | www
 
 ## About us?
 
-É um starter php. É um conjunto de trabalho que utiliza para as tarefas do dia a dia o Bootstrap, SASS e Grunt.
+É um starter grunt. É um conjunto de trabalho que utiliza para as tarefas do dia a dia o Bootstrap, SCSS e Grunt.
 
 
 ## Getting Started
@@ -41,17 +41,14 @@ ProjectRoot/
 │   |	│   └── _header.scss
 |	│   │   └── _inner-content.scss
 |	│   │   └── _query.scss
-│
-├── assets/
+|
 │   ├── images/
 |	│   └── src/
-│
-├── assets/
+|
 |	├── js/
 │   │   └── vendor/
 |	│   └── <package-name>.min.js
-│
-
+|
 ├── src/
 |	├── node_modules/
 |	├── Gruntfile.js
@@ -62,7 +59,7 @@ ProjectRoot/
 ├── index.php
 ├── footer.php
 └── README.md
-...
+```
 
 
 ### About Structure
