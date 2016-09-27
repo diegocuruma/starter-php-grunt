@@ -45,6 +45,9 @@ ProjectRoot/
 │   ├── images/
 |	│   └── src/
 |
+│   ├── fonts/
+|	│   └── src/
+|
 |	├── js/
 │   │   └── vendor/
 |	│   └── <package-name>.min.js
