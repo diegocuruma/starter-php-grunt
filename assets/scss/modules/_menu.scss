@@ -5,9 +5,9 @@
 */
 
 //mark menu
-    /*.home .menu-link[title*="Home"],
-    .page-produtos .menu-link[title*="Produtos"],
-    .page-contato .menu-link[title*="Contato"]{color:$cl1!important;}*/
+/*.home .menu-link[title*="Home"],
+.page-produtos .menu-link[title*="Produtos"],
+.page-contato .menu-link[title*="Contato"]{color:$cl1!important;}*/
 
 .navbar-toggle {
   border: none;
@@ -46,30 +46,55 @@
   }
 }
 
-.navbar{
+
+
+
+//**
+// menu
+//**
+.navbar-nav{
+	margin-top: 15px$imp;
+}
+.navbar{	
       margin-bottom: inherit;
+	  height: 100%;          
+	  box-shadow:5px 0 10px -3px #e4e4e4;
       border:none;
       border-radius:0px;
       padding: 15px 0;
-        li{
+        /*li{
             margin: 0 15px;
-        }
+        }*/
+	
+	&-header{
+		float: inherit $imp;
+		/*margin: 0 auto;
+    	display: table;*/
+	}
+	
+	
+	li{
+		border-bottom:solid 1px #f0f0f0;
+	}
         a.menu-link {
-          padding: 18px 10px;
+          padding:12px 10px;
+		  
           display: block;
-          font:ft-convert(22) $ft1;
-          color:$cl1 $imp;
+          font:ft-convert(19) $ft1;
+          color:$cl-blue $imp;
             &:hover{
-            color:$cl2  $imp;
+            color:$cl-yellow $imp;
+				background: transparent;
             }
         }
         &-nav{
-          margin-top:0;
+          margin-top:0;	
         }
     }
 
     .navbar li.active > a{
       background-color:transparent$imp;
+	 color:$cl-yellow $imp
       //@include back($cl1 $imp, $cl2 $imp);
       // &:hover{
       //   background-color: black;

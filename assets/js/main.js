@@ -120,20 +120,3 @@ $('ul.nav li.dropdown').hover(function() {
 
 
 
-
-//**
-//  menu
-//**
-jQuery(document).ready(function($){
-    $('.menu-item > a').addClass('menu-link');
-
-    // Menu click Scroll
-    $('a.menu-link').bind('click', function(event) {
-    var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 190)
-        }, 450, 'linear') ;
-    event.preventDefault();
-    }) ;
-
-});

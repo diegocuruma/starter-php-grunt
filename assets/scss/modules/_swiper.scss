@@ -1,8 +1,5 @@
-/*
-|----------------------------------------------
-| swiper
-|----------------------------------------------
-*/
+
+
 
 
 .swiper-container {
@@ -29,22 +26,31 @@
 			 -ms-flex-align: center;
 			 -webkit-align-items: center;
 			 align-items: center;
-              -webkit-flex-shrink: 0;
-             -ms-flex: 0 0 auto;
-             flex-shrink: 0;
-             width: 100%;
-             height: 100%;
-             position: relative;
-            img{
-                width: 100%;
-                display:block
-            }
-        a img{
+		img{
+			width: 100%;
+			display:block
+		}
+	
+		a{
                 width: 100%;
                 display:block
         }
+		
+	
+		a img{
+                width: 100%;
+                display:block
+        }
+	
 	 }
-
+	 .swiper-slide {
+		 -webkit-flex-shrink: 0;
+		 -ms-flex: 0 0 auto;
+		 flex-shrink: 0;
+		 width: 100%;
+		 height: 100%;
+		 position: relative;
+	 }
 // .swiper-container-no-flexbox .swiper-slide {
 //   float: left;
 // }
@@ -132,15 +138,6 @@
   touch-action: pan-x;
 }
 /* Arrows */
-
-// arrows maquinas
-.s2{
-	.swiper-button-prev,
-	.swiper-button-next {
-		top: 35%;
-	}
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
@@ -167,11 +164,9 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image:url('../images/prev.png');
+  background: url('../images/prev.png');
   left: 10px;
   right: auto;
-  border-radius: 100%;
-  background-color:rgba($cl-black, .7);
 }
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
@@ -186,8 +181,6 @@
   background-image: url('../images/next.png');
   right: 10px;
   left: auto;
-  border-radius: 100%;
-    background-color:rgba($cl-black, .7);
 }
 .swiper-button-next.swiper-button-black,
 .swiper-container-rtl .swiper-button-prev.swiper-button-black {
@@ -218,7 +211,7 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom:20px;
+  bottom: 20px;
   left: 0;
   width: 100%;
 }
@@ -227,7 +220,7 @@
   @include size(15px);
   display: inline-block;
   border-radius: 100%;
-  background:$cl1;
+  background:$cl-yellow;
   opacity: 0.7;
 }
 button.swiper-pagination-bullet {
@@ -248,7 +241,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background:$cl-red;
+  background:$cl-green;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background:#fff;

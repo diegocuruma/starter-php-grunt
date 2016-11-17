@@ -13,8 +13,16 @@
 
 // img replace
 .img-rep {
-  display:$dbl; overflow:hidden; text-indent:9999px;
+  display:$dbl; overflow:hidden; text-indent:-9999px;
 }
+
+
+// margin top e center
+/*
+.aligntop{
+@extend %aligntop;
+}
+*/
 
 
 // CSS Helpers
@@ -23,12 +31,7 @@
 
 // cores
 .branco, .branco > p{
-    color:$cl2!important;
-}
-
-// yellow
-.yellow, .yellow > p{
-  color: $cl-yellow$imp;
+    color:$cl1!important;
 }
 
 .cr         { clear: both; }
@@ -41,19 +44,19 @@
 
 // Visibility
 .invisible  { visibility: hidden; }
-
 // Hide text (image replacement)
 .hide-text {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+	display: block
 }
 
 // Display
-.di         { display: inline; }
+.di         { display: inline $imp; }
+.dt         { display: table$imp; }
 .db         { display: block; }
 .dib        { display: inline-block; }
-.dpt        {display: table; }
 
 // Posicionamentos
 .pos-a      { position: absolute; }
@@ -68,7 +71,7 @@
 .mr-5       { margin-right: 5px; }
 .mb-5       { margin-bottom: 5px; }
 .ml-5       { margin-bottom: 5px }
-.mt-10      { margin-top: 10px$imp; }
+.mt-10      { margin-top: 10px; }
 .mr-10      { margin-right: 10px; }
 .mb-10      { margin-bottom: 10px; }
 .ml-10      { margin-bottom: 10px }
@@ -76,16 +79,16 @@
 .mr-15      { margin-right: 15px; }
 .mb-15      { margin-bottom: 15px; }
 .ml-20      { margin-bottom: 15px }
-.mt-20      { margin-top: 20px$imp}
+.mt-20      { margin-top: 20px; }
 .mr-20      { margin-right: 20px; }
 .mb-20      { margin-bottom: 20px; }
 .ml-20      { margin-bottom: 20px }
-.ml-40      { margin-bottom: 40px }
+.mb-30      { margin-bottom: 30px}
 .mt-50      {margin-top: 50px;}
 .mt-70      {margin-top: 70px;}
 
-//Paddings
-.pt-pb        { padding:70px 0; }
+// Paddings
+.pt-pb       { padding:100px 0; }
 .p-5        { padding: 5px; }
 .pt-5       { padding-top: 5px; }
 .pr-5       { padding-right: 5px; }
@@ -93,9 +96,9 @@
 .pl-5       { padding-bottom: 5px }
 .p-10       { padding: 10px; }
 .pt-10      { padding-top: 10px; }
-.pr-10      { padding-right: 10px$imp; }
+.pr-10      { padding-right: 10px; }
 .pb-10      { padding-bottom: 10px; }
-.pl-10      { padding-left: 10px$imp }
+.pl-10      { padding-bottom: 10px }
 .p-15       { padding: 15px; }
 .pt-15      { padding-top: 15px; }
 .pr-15      { padding-right: 15px; }
@@ -106,6 +109,8 @@
 .pr-20      { padding-right: 20px; }
 .pb-20      { padding-bottom: 20px; }
 .pl-20      { padding-bottom: 20px }
+.pt-30      { padding-top: 30px; }
+.pb-70      { padding-bottom: 70px; }
 
 // Reset margin
 .no-margin  { margin: 0; }
@@ -129,19 +134,10 @@
 .no-bdr-b   { border-bottom: 0; }
 .no-bdr-l   { border-left: 0; }
 
-.divisor{
-	height:1px;
-	border: 1px solid;
-	border-color:#ddd transparent transparent transparent;
-	margin: -22px 0 0 0 ;
-
-	@include relative(0, relative)
-}
-
 // Text align
 .tal        { text-align: left !important; }
-.tac        { text-align: center; }
-.tar        { text-align: right$imp; }
+.tac        { text-align: center !important; }
+.tar        { text-align: right !important; }
 .taj        { text-align: justify !important; }
 
 // Vertical align

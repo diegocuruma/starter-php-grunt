@@ -16,17 +16,17 @@
   &__bt{
     display:inline-block;
   *display:inline;
-	padding:10px 30px;
+	padding:10px 20px;
 	//margin-bottom:10px;
-	font:ft-convert(18) $ft1;
+	font:ft-convert(18) $ft2;
 	color:#fff;
 	text-align:center;
 	vertical-align:middle;
 	cursor:pointer;
   //text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-    border-radius:6px;
-    background: #8e8e8e;
-	border-bottom:2px solid #717171;
+  //border-radius:6px;
+  background: #8e8e8e;
+	//border-bottom:2px solid #717171;
     &:hover{
         background: #a0a0a0;
     }
@@ -35,24 +35,42 @@
   // buttons variantes
   //**
 
-  //verde/green
-  &--green{
-    @include bg-bd($cl4, rgba($cl4, .2));
-    //padding:10px 8px;
+  //black/black
+  &--black{
+    @include bg-bd($cl3, rgba($cl3, .2));
+    padding:10px 8px;
     &:hover, &:active{
-	    background:rgba($cl4, .4);
+	    background:rgba($cl3, .4);
       }
     }
 
    // blue
-    &--pink{
-      //padding:10px 8px;
-    @include bg-bd($cl2, rgba($cl2, .2));
+    &--blue{
+      padding:10px 20px;
+	  @include back($cl-blue-light, $cl1);    
     &:hover, &:active{
-	    background:rgba($cl2, .3);
+	    background:$cl-yellow;
+      }
+    }
+	  
+	// ywllow
+    &--yellow{
+      padding:10px 20px;
+	  @include back($cl-yellow, $cl1);    
+    &:hover, &:active{
+	    background:rgba($cl-yellow, .8);
       }
     }
 
+    // green
+     &--green{
+        padding:10px 20px;
+     	@include back($cl-green, $cl1);     	
+		 display: block;
+		 &:hover, &:active{
+			 background:$cl-yellow;
+		  }
+     }
 
     // table
     &--table{
@@ -63,7 +81,6 @@
     &--form{
     border:0$imp;
     border-radius: 4px;
-      margin-top: 10px;
     }
 
 
@@ -86,15 +103,42 @@
     &--large{
       padding:15px;
     }
-
-
-    &--center{
+	  
+	  
+	&--center{
       @extend %center;
     }
-
-    &--right{
-      @extend .pull-right
-    }
+	  
+	//**
+	// warnings
+	//** 
+	  &--danger{		  
+		  background: #f2dede$imp;
+		  color:#222$imp;
+		  padding: 15px$imp;
+		  font:ft-convert(16) $ft1;
+		  margin: 7px 0 15px;
+	  }
+	  
+	  
+	  &--warning{		  
+		  background: #d6aaaa$imp;
+		  color:#222$imp;
+		  padding: 15px$imp;
+		  font:ft-convert(16) $ft1;
+		  margin: 7px 0 15px;
+	  }
+	  
+	  &--sucess{
+		  @include back(#dff0d8, #222);
+		  padding: 15px$imp;
+		  font:ft-convert(16) $ft1;
+		  margin: 7px 0 15px;
+		  width: 100%;
+		  float: left
+	  }
+	    
+	  
 
   }
 }
